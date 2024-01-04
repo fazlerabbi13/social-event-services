@@ -1,0 +1,45 @@
+[
+    {
+      "id": 1,
+      "name": "Weddings",
+      "image": "https://i.ibb.co/VgRSSBr/weeding.jpg",
+      "price": 1500,
+      "short_description": "Comprehensive event planning services for a seamless and memorable social gathering."
+    },
+    {
+      "id": 2,
+      "name": "Birthday Parties",
+      "image": "https://i.ibb.co/31RrvZp/birthday-2.jpg",
+      "price": 800,
+      "short_description": "Capture every special moment with our professional photography package tailored for social events."
+    },
+    {
+      "id": 3,
+      "name": " Anniversaries",
+      "image": "https://i.ibb.co/wR7ywTD/aniversary-2.jpg",
+      "price": 500,
+      "short_description": "Transform your event space with stunning decorations that match your theme and style."
+    },
+    {
+      "id": 4,
+      "name": "Engagement Parties",
+      "image": "https://i.ibb.co/Y7vjjBv/aniversary.jpg",
+      "price": 1200,
+      "short_description": "Elevate your social event with live entertainment, from musicians to performers, creating a vibrant atmosphere."
+    },
+    {
+      "id": 5,
+      "name": "Retirement Parties",
+      "image": "https://i.ibb.co/55780bs/retierment.jpg",
+      "price": 1000,
+      "short_description": "Delight your guests with a diverse and delectable menu, expertly crafted to suit your event's taste and style."
+    },
+    {
+      "id": 6,
+      "name": "Baby shower",
+      "image": "https://i.ibb.co/thDGMJr/baby-shower.jpg",
+      "price": 700,
+      "short_description": "Let our experienced event coordinators handle the logistics, ensuring a stress-free and enjoyable social gathering."
+    }
+  ]
+  
