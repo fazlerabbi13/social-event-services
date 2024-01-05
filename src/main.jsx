@@ -12,38 +12,44 @@ import Login from './components/Login/Login.jsx';
 import Register from './components/Register/Register.jsx';
 import About from './components/About/About.jsx';
 import Dashboard from './components/Dashboard/Dashboard.jsx';
+import AuthProvider from './Provider/AuthProvider.jsx';
+
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root></Root>,
-    errorElement:<ErrorPage></ErrorPage>,
-    children:[
-     {
-      path:'/',
-      loader:() => fetch('serviceCategory.json'),
-      element:<Home></Home>
-     },
-     {
-      path:'/login',
-      element:<Login></Login>
-     },
-     {
-      path:'/register',
-      element:<Register></Register>
-     },
-     {
-      path:'/about',
-      element:<About></About>
-     },
-     {
-      path:'/dashboard',
-      element:<Dashboard></Dashboard>
-     }
+    errorElement: <ErrorPage></ErrorPage>,
+    children: [
+      {
+        path: '/',
+        loader: () => fetch('serviceCategory.json'),
+        element: <Home></Home>
+      },
+      {
+        path: '/login',
+        element: <Login></Login>
+      },
+      {
+        path: '/register',
+        element: <Register></Register>
+      },
+      {
+        path: '/about',
+        element: <About></About>
+      },
+      {
+        path: '/dashboard',
+        element: <Dashboard></Dashboard>
+      }
     ]
   },
 ]);
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-     <RouterProvider router={router} />
+
+    <AuthProvider>
+      <RouterProvider router={router} />
+    </AuthProvider>
+
   </React.StrictMode>,
 )

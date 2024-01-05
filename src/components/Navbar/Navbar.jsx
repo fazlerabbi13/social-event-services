@@ -1,14 +1,15 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
+
 
 const Navbar = () => {
-
-    const navLinks = <>
-        <li><NavLink to='/'>Home</NavLink></li>    
-        <li><NavLink to='/about'>about us</NavLink></li>    
-        <li><NavLink to='/login'>Login</NavLink></li>    
-        <li><NavLink to='/register'>Register</NavLink></li>    
-        <li><NavLink to='/dashboard'>Dashboard</NavLink></li>    
     
+    const navLinks = <>
+        <li><NavLink to='/'>Home</NavLink></li>
+        <li><NavLink to='/about'>about us</NavLink></li>
+        <li><NavLink to='/login'>Login</NavLink></li>
+        <li><NavLink to='/register'>Register</NavLink></li>
+        <li><NavLink to='/dashboard'>Dashboard</NavLink></li>
+
     </>
 
 
@@ -31,7 +32,7 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <a className="btn">Button</a>
+            
             </div>
         </div>
     );
